@@ -7,6 +7,7 @@ const findByDataTestAttr = (component, attr) => {
 
 const checkProps = (component, expectedProps) => {
   const propsErr = checkPropTypes(
+    // eslint-disable-next-line react/forbid-foreign-prop-types
     component.propTypes,
     expectedProps,
     'props',
