@@ -1,6 +1,6 @@
-import { types } from '../../actions/types'
+import { types } from './../../actions/types'
 
-const postReducer = (state = [], action) => {
+export default (state = [], action) => {
   switch (action.type) {
     case types.GET_POSTS:
       return action.payload
@@ -8,5 +8,3 @@ const postReducer = (state = [], action) => {
       return state
   }
 }
-
-export default postReducer
